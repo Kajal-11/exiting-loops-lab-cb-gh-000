@@ -17,3 +17,12 @@ function keepGoing(array, changeValue, skipValue){
   }
   return array;
 }
+
+function findBy(array, findFn){
+  var i;
+  for(i = 0; i < array.length; i++){
+    if(array[i] === findFn())
+      return array[i];
+  }
+  return "null";
+}
